@@ -11,7 +11,7 @@ jobs:
    - name: Setup Java JDK
      uses: actions/setup-java@v3.14.1
      with:
-      java-version: '11'
+      java-version: '17'
       distribution:  'oracle'
    - run: mvn --batch-mode --update-snapshots verify
    - run: mkdir staging && cp target/*.jar staging
